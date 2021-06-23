@@ -1,0 +1,65 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "prettier/airbnb",
+    "prettier/react"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "function-name": false,
+    "variable-name": false,
+    "import-name": false,
+    "no-increment-decrement": false,
+    "ter-arrow-parens": [true, "as-needed"],
+    "align": [true, "parameters", "statements"],
+    "max-file-line-count": [true, 500],
+    "ban-ts-ignore": true,
+    "only-arrow-functions": true,
+    "no-async-without-await": true,
+    "ordered-imports": true,
+    "no-consecutive-blank-lines": true,
+    "file-name-casing": [
+      true,
+      {
+        ".tsx": "camel-case"
+      }
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "singleline": "never",
+        "multiline": {
+          "objects": "never",
+          "arrays": "never",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        }
+      }
+    ]
+  },
+  "settings": {
+    "paths": {
+      "@atoms/*": ["components/atoms/*"],
+      "@molecules/*": ["components/molecules/*"],
+      "@organisms/*": ["components/organisms/*"],
+      "@templates/*": ["components/templates/*"]
+    }
+  }
+}
