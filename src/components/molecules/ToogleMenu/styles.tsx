@@ -82,7 +82,7 @@ export const ToogleText = styled(Text)`
   cursor: pointer;
 
   &:hover {
-    color: ${Colors.DARKER_RED};
+    color: ${Colors.PRIMARY_HOVER};
   }
 `;
 
