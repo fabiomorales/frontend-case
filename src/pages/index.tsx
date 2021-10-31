@@ -1,4 +1,3 @@
-import { Header } from 'components/molecules';
 import { Home as HomePage } from '@organisms/index';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
