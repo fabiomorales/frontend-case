@@ -1,3 +1,3 @@
 ## Project deployed on Vercel
 
-https://vercel.com/landingpagecase/frontend-case
+https://frontend-case.vercel.app/
